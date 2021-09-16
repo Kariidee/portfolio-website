@@ -161,6 +161,116 @@ a:focus {
   border: 2px solid #E2D4B7;
 }
 
+/* Main Animation */
+.girl-illustration {
+  display: block;
+  margin: auto;
+  width: 100%
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lightbulb Animation */
+@keyframes color-change {
+  from {fill: #fcd277}
+  to {fill: #ffffff}
+}
+
+#path302 {
+  animation: 4s color-change infinite alternate;linear;
+}
+
+/* Lightbulb Rays Animation */
+@keyframes color-change-rays {
+  from {fill: #fcd277}
+  to {fill: #ddd6ef}
+}
+
+#path332 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path330 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path328 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path326 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path324 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path322 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path320 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path304 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path306 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path308 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path310 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path312 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path314 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path316 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+#path318 {
+  animation: 4s color-change-rays infinite alternate;linear;
+}
+
+/* Stars Animation */
+@keyframes star-move1 {
+  from {fill: #8076C2; transform: translate(0px,50px);}
+  to {fill:#ffffff; transform: translate(-150px, 100px);}
+}
+
+#path584 {
+  animation: 3s star-move1 infinite alternate ease-out;
+}
+
+@keyframes star-move2 {
+  from {fill: #8076C2; transform: translate(0px,100px);}
+  to {fill:#ffffff; transform: translate(-50px, 50px);}
+}
+
+#path586 {
+  animation: 2s star-move2 infinite alternate ease-out;
+}
+
+@keyframes star-move3 {
+  from {fill: #8076C2; transform: translate(0px,100px);}
+  to {fill:#DDD6EF; transform: translate(-50px, 25px);}
+}
+
+#path580 {
+  animation: 3.5s star-move3 infinite alternate ease-out;
+}
+
+@keyframes star-move4 {
+  from {fill: #8076C2; transform: translate(0px,100px);}
+  to {fill:#ffffff; transform: translate(50px, 200px);}
+}
+
+#path582 {
+  animation: 2.5s star-move4 infinite alternate ease-out;
+}
+
+
+
 /* Layout styling */
 .container {
   padding: 0 15px;
