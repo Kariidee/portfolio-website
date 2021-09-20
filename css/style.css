@@ -11,11 +11,13 @@ Secondary Color (Beige): E2D4B7;
 
 header {
   background-color: #ffffff;
-  text-align: center;
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 4px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 body {
@@ -60,7 +62,7 @@ h4 {
 }
 
 main {
-  padding-top: 186px;
+  padding-top: 120px;
 }
 
 img {
@@ -165,8 +167,8 @@ a:focus {
 .girl-illustration {
   display: block;
   margin: auto;
-  width: 100%
-  max-width: 100%;
+  width: 100%;
+  max-width: 550px;
   height: auto;
 }
 
@@ -300,19 +302,13 @@ a:focus {
   max-width: 60px;
 }
 
-nav {
-  width: 100%;
-  display: inline-block;
-}
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -344,6 +340,36 @@ nav>ul>li>a:focus {
   text-decoration: underline;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-right: 0;
+}
+
+/* navtoggle responsive */
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  text-align: center;
+  font-size: 18px;
+  border-top: 1px solid #E2D4B7;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -362,7 +388,7 @@ footer {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -372,6 +398,21 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 25px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
