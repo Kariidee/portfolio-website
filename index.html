@@ -28,7 +28,7 @@
           <ul class="navigation">
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="#contact" onclick=" menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -686,16 +686,19 @@
           </svg>
         </picture>
       </div>
+      <div id="work" style="margin: 40px;"></div>
       <div class="container">
         <h2>My Work</h2>
         <div class="row">
           <!--open row that holds (2) columns for project-->
           <div class="column col-md-6 col-lg-7">
             <!--open first column (used for image)-->
-            <picture>
-              <source srcset="img/destri/destri_mobile.jpg" media="(max-width:767px)">
-              <img src="img/destri/destri_desktop.jpg" alt="Destri Image">
-            </picture>
+            <a href="destri.html" class="work-link-wrapper">
+              <picture>
+                <source srcset="img/destri/destri_mobile.jpg" media="(max-width:767px)">
+                <img src="img/destri/destri_desktop.jpg" alt="Destri Image">
+              </picture>
+            </a>
           </div>
           <div class="column col-md-6 col-lg-5">
             <h3>Destri</h3>
@@ -709,10 +712,12 @@
             <!--open row that holds (2) columns for project-->
             <div class="column col-md-6 col-lg-7">
               <!--open first column (used for image)-->
-              <picture>
-                <source srcset="img/centrack/centrack_mobile.jpg" media="(max-width:767px)">
-                <img src="img/centrack/centrack_desktop.jpg" alt="Centrack Image">
-              </picture>
+              <a href="centrack.html" class="work-link-wrapper">
+                <picture>
+                  <source srcset="img/centrack/centrack_mobile.jpg" media="(max-width:767px)">
+                  <img src="img/centrack/centrack_desktop.jpg" alt="Centrack Image">
+                </picture>
+              </a>
             </div>
             <div class="column col-md-6 col-lg-5">
               <h3>Centrack</h3>
@@ -727,10 +732,12 @@
               <!--open row that holds (2) columns for project-->
               <div class="column col-md-6 col-lg-7">
                 <!--open first column (used for image)-->
-                <picture>
-                  <source srcset="img/idealmeal/idealmeal_mobile.jpg" media="(max-width:767px)">
-                  <img src="img/idealmeal/idealmeal_desktop.jpg" alt="Ideal Meal Image">
-                </picture>
+                <a href="idealmeal.html" class="work-link-wrapper">
+                  <picture>
+                    <source srcset="img/idealmeal/idealmeal_mobile.jpg" media="(max-width:767px)">
+                    <img src="img/idealmeal/idealmeal_desktop.jpg" alt="Ideal Meal Image">
+                  </picture>
+                </a>
               </div>
               <div class="column col-md-6 col-lg-5">
                 <h3>Ideal Meal</h3>
@@ -747,7 +754,7 @@
     </div>
   </main>
   <!-- For the footer -->
-  <footer>
+  <footer id="contact">
     <div class="container">
       <h2> Let's Connect!</h2>
       <p>

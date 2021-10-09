@@ -369,6 +369,10 @@ nav>ul>li>a:focus {
   padding: 10px;
 }
 
+.work-link-wrapper img{
+  border: 5px solid #f5f1ed;
+}
+
 /* Footer Styling */
 footer {
   text-align: center;
@@ -453,4 +457,29 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.logo-link-wrapper img{
+  transition: all 500ms;
+}
+
+.logo-link-wrapper:hover img {
+  transition: all 500ms;
+  transform: scale(1.1);
+}
+
+
+
+.work-link-wrapper img{
+  transition: all 800ms;
+  border-width: medium;
+  border-color: #f5f1ed;
+}
+
+.work-link-wrapper:hover img {
+  transition: all 800ms;
+  transform: scale(1.1);
+  border-width: medium;
+  border-color: #f5f1ed;
+  padding:10px;
 }
