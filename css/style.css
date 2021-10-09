@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: 'Tenor Sans', sans-serif;
-  font-size: 2.75em;
+  font-size: 2.25em;
   font-weight: 700;
   text-align: center;
   /* Centers text */
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
   font-family: 'Tenor Sans', sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -62,7 +62,7 @@ h4 {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 72px;
 }
 
 img {
@@ -75,10 +75,6 @@ a {
   transition: 0.2s opacity;
 }
 
-a:visited {
-  /* visited link */
-  color: #744168;
-}
 
 a:hover {
   color: #E2D4B7;
@@ -291,15 +287,16 @@ a:focus {
 #hero {
   text-align: center;
   /* Centers text */
-  background-color: #E2D4B7;
-  padding: 20px 0;
+  background-color: #f5f1ed;
+  padding: 0 5px;
   display: inline-block;
   width: 100%;
 }
 
+
 /* Header & Navigation Styling */
 .logo {
-  max-width: 60px;
+  max-width: 36px;
 }
 
 
@@ -312,15 +309,12 @@ nav>ul {
 
 nav>ul>li>a {
   padding: 0 15px;
-  text-transform: uppercase;
+  font-family: 'Tenor Sans', sans-serif;
+  text-transform: none;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 14px
   color: #333333;
-}
-
-nav>ul>li>a:visited {
-  /* visited link */
-  color: #744168;
 }
 
 nav>ul>li>a:hover {
@@ -349,16 +343,16 @@ nav>ul>li>a:focus {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-right: 0;
 }
 
 /* navtoggle responsive */
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 20px 0 0;
   text-align: center;
   font-size: 18px;
-  border-top: 1px solid #E2D4B7;
+  border-top: 1px solid #f5f1ed;
 }
 
 .navtoggle.responsive li  {
@@ -379,7 +373,7 @@ nav>ul>li>a:focus {
 footer {
   text-align: center;
   /* Centers text */
-  background-color: #E2D4B7;
+  background-color: #E3D7CC;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -391,13 +385,13 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 12px 0 10px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 25px;
+    margin-top: 2px;
   }
 
   nav > ul {
@@ -416,7 +410,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 142px;
+    padding-top: 80px;
   }
 
   body {
