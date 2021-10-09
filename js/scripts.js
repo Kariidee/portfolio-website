@@ -2,7 +2,8 @@ console.log("Welcome to my Portfolio!")
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
+  var windowWidth = window.innerWidth
+  if (x.className === 'navtoggle' && windowWidth < 641) {
     x.className += ' responsive';
   } else {
     x.className = 'navtoggle';
