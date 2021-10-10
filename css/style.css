@@ -3,7 +3,7 @@ Colors used:
 Primary Color (Black): #0c0f0f;
 Primary Color (Dark Gray): 333333;
 Primary Color (White): ffffff;
-Secondary Color (Beige): E2D4B7;
+Secondary Color (D.Beige): E3D7CC;
 */
 * {
   box-sizing: border-box;
@@ -77,26 +77,36 @@ a {
 
 
 a:hover {
-  color: #E2D4B7;
+  color: #E3D7CC;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #E2D4B7;
+  color: #E3D7CC;
 }
 
 a:hover,
 a:focus {
-  color: #E2D4B7;
+  color: #E3D7CC;
   text-decoration: underline;
 }
 
+.project-link {
+  color: #0800ff;
+  text-decoration: underline;
+}
+
+.project-link:hover {
+  color: #E3D7CC;
+}
+
+
 .button {
   display: inline-block;
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #f5f1ed;
+  color: #333333;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -106,38 +116,40 @@ a:focus {
 }
 
 .button:hover {
+  background-color: #333333;
+  color: #ffffff;
   opacity: 0.8;
 }
 
 .button-contact {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #f5f1ed;
+  color: #333333;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid #E3D7CC;
   transition: 0.2s opacity;
 }
 
 .button-contact:hover {
   opacity: 0.8;
-  background-color: #ffffff;
-  color: #333333;
-  border: 2px solid #ffffff;
+  background-color: #333333;
+  color: #ffffff;
+  border: 2px solid #333333;
 }
 
 .button-social {
   display: inline-block;
   position: relative;
-  width: 6%;
+  width: 5%;
 }
 
 .button-social:hover {
   display: inline-block;
-  width: 10%;
-  color: #E2D4B7;
+  width: 6%;
+  color: #E3D7CC;
 }
 
 .button-resume {
@@ -154,9 +166,9 @@ a:focus {
 
 .button-resume:hover {
   opacity: 0.8;
-  background-color: #E2D4B7;
+  background-color: #E3D7CC;
   color: #333333;
-  border: 2px solid #E2D4B7;
+  border: 2px solid #E3D7CC;
 }
 
 /* Main Animation */
@@ -318,7 +330,7 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:hover {
-  color: #E2D4B7;
+  color: #E3D7CC;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
@@ -330,7 +342,7 @@ nav>ul>li>a:active {
 
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
-  color: #E2D4B7;
+  color: #E3D7CC;
   text-decoration: underline;
 }
 
@@ -370,7 +382,15 @@ nav>ul>li>a:focus {
 }
 
 .work-link-wrapper img{
-  border: 5px solid #f5f1ed;
+  border: 5px;
+  border-style: solid;
+  border-color: #E3D7CC;
+}
+
+.work-link-wrapper:hover img {
+  transition: all 800ms;
+  transform: scale(1.05);
+  padding:6px;
 }
 
 /* Footer Styling */
@@ -425,6 +445,7 @@ Medium devices (640px and larger)
     display: block;
   }
 
+
   .col-md-6 {
     width: 50%;
   }
@@ -466,20 +487,4 @@ Large devices (1024px or larger)
 .logo-link-wrapper:hover img {
   transition: all 500ms;
   transform: scale(1.1);
-}
-
-
-
-.work-link-wrapper img{
-  transition: all 800ms;
-  border-width: medium;
-  border-color: #f5f1ed;
-}
-
-.work-link-wrapper:hover img {
-  transition: all 800ms;
-  transform: scale(1.1);
-  border-width: medium;
-  border-color: #f5f1ed;
-  padding:10px;
 }
