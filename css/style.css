@@ -67,6 +67,7 @@ main {
 
 img {
   width: 100%;
+  z-index: 0;
 }
 
 a {
@@ -385,12 +386,14 @@ nav>ul>li>a:focus {
   border: 5px;
   border-style: solid;
   border-color: #E3D7CC;
+  z-index: 0;
 }
 
 .work-link-wrapper:hover img {
   transition: all 800ms;
   transform: scale(1.05);
   padding:6px;
+  z-index: 0;
 }
 
 /* Footer Styling */
