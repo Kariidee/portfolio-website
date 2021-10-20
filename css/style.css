@@ -3,7 +3,7 @@ Colors used:
 Primary Color (Black): #0c0f0f;
 Primary Color (Dark Gray): 333333;
 Primary Color (White): ffffff;
-Secondary Color (Light Beige):
+Secondary Color (Light Beige):f5f1ed
 Secondary Color (D.Beige): E3D7CC;
 Secondary Color (Gray): 837E7A;
 */
@@ -13,12 +13,14 @@ Secondary Color (Gray): 837E7A;
 
 header {
   background-color: #ffffff;
+  color: transparent;
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
   padding: 10px 0 4px;
   z-index: 1;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
@@ -76,19 +78,19 @@ main {
   padding-top: 72px;
 }
 
-
 img {
   width: 100%;
 }
 
 .icon:hover {
   color: #837E7A;
+  background-color: transparent;
   border: none;
 }
 
 .icon:hover,
-.icon:focus{
-  color: #E3D7CC;
+.icon:focus {
+  fill: #E3D7CC;
   border: none;
 }
 
@@ -96,9 +98,9 @@ img {
   border: none;
 }
 
-
 a {
   color: #0c0f0f;
+  background-color: transparent;
   text-decoration: underline;
   transition: 0.2s opacity;
 }
@@ -112,11 +114,13 @@ a:hover {
 a:active {
   /* selected link */
   color: #E3D7CC;
+  background-color: transparent;
 }
 
 a:hover,
 a:focus {
   color: #837E7A;
+  background-color: transparent;
   border: 2px;
   border-style: solid;
   border-color: #f5f1ed;
@@ -126,20 +130,22 @@ a:focus {
 
 .project-link {
   color: #0800ff;
+  background-color: transparent;
   text-decoration: underline;
 }
 
 .project-link:hover {
   color: #837E7A;
+  background-color: transparent;
 }
-
 
 .button {
   display: inline-block;
-  text-decoration: underline
+  text-decoration: underline;
   color: #333333;
+  background-color: transparent;
   font-weight: 400;
-  padding:2px;
+  padding: 2px;
   border-radius: 3px;
   border-bottom: 2px solid #ffffff;
   transition: 0.2s opacity;
@@ -147,6 +153,7 @@ a:focus {
 
 .button:hover {
   color: #837E7A;
+  background-color: transparent;
   text-decoration: none;
   border: 2px;
   border-style: solid;
@@ -158,7 +165,8 @@ a:focus {
 
 .button-contact {
   margin-top: 15px;
-  background-color: #0c0f0f; opacity: 0.8;
+  background-color: #0c0f0f;
+  opacity: 0.8;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -219,9 +227,17 @@ a:focus {
 
 /* Leaf Animation */
 @keyframes leaf-sway1 {
-  0% {transform:rotate(0deg)translate(0,0px);}
-  50% {transform:rotate(1deg)translate(20px,-20px);}
-  100% {transform:rotate(-1deg)translate(15px,10px);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  50% {
+    transform: rotate(1deg)translate(20px, -20px);
+  }
+
+  100% {
+    transform: rotate(-1deg)translate(15px, 10px);
+  }
 }
 
 #path358 {
@@ -233,8 +249,13 @@ a:focus {
 }
 
 @keyframes leaf-sway2 {
-  0% {transform:rotate(0deg)translate(0,0);}
-  100% {transform:rotate(.5deg)translate(10px,0);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  100% {
+    transform: rotate(.5deg)translate(10px, 0px);
+  }
 }
 
 #path344 {
@@ -246,124 +267,190 @@ a:focus {
 }
 
 @keyframes leaf-slide1 {
-  0% {transform:rotate(0deg)translate(0px,0);}
-  50% {transform:rotate(0deg)translate(30,0px);}
-  100% {transform:rotate(1deg)translate(40,0px);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  50% {
+    transform: rotate(0deg)translate(30px, 0px);
+  }
+
+  100% {
+    transform: rotate(1deg)translate(40px, 0px);
+  }
 }
 
 #path360 {
-animation: leaf-slide1 8s ease-in-out infinite alternate; linear;
+  animation: leaf-slide1 8s ease-in-out infinite alternate;
 }
+
 #path362 {
-animation: leaf-slide1 8s ease-in-out infinite alternate; linear;
+  animation: leaf-slide1 8s ease-in-out infinite alternate;
 }
 
 @keyframes leaf-slide2 {
-  0% {transform:rotate(0deg)translate(0px,0);}
-  50% {transform:rotate(0deg)translate(30px,0);}
-  100% {transform:rotate(0deg)translate(10px,0);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  50% {
+    transform: rotate(0deg)translate(30px, 0px);
+  }
+
+  100% {
+    transform: rotate(0deg)translate(10px, 0px);
+  }
 }
 
 #path348 {
-animation: leaf-slide2 5s ease-in-out infinite alternate; linear;
+  animation: leaf-slide2 5s ease-in-out infinite alternate;
 }
+
 #path350 {
-animation: leaf-slide2 5s ease-in-out infinite alternate; linear;
+  animation: leaf-slide2 5s ease-in-out infinite alternate;
 }
 
 @keyframes palm-slide1 {
-  0% {transform:rotate(0deg)translate(0px,0);}
-  50% {transform:rotate(0deg)translate(30,0px);}
-  100% {transform:rotate(0deg)translate(60px,0px);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  50% {
+    transform: rotate(0deg)translate(30px, 0px);
+  }
+
+  100% {
+    transform: rotate(0deg)translate(60px, 0px);
+  }
 }
 
 #path352 {
-animation: palm-slide1 7s ease-in-out infinite alternate; linear;
+  animation: palm-slide1 7s ease-in-out infinite alternate;
 }
+
 #path354 {
-animation: palm-slide1 7s ease-in-out infinite alternate; linear;
+  animation: palm-slide1 7s ease-in-out infinite alternate;
 }
 
 @keyframes palm-slide2 {
-  0% {transform:rotate(0deg)translate(0,0);}
-  50% {transform:rotate(0deg)translate(-30px,0);}
-  100% {transform:rotate(0deg)translate(60px,0);}
+  0% {
+    transform: rotate(0deg)translate(0px, 0px);
+  }
+
+  50% {
+    transform: rotate(0deg)translate(-30px, 0px);
+  }
+
+  100% {
+    transform: rotate(0deg)translate(60px, 0px);
+  }
 }
 
 #path364 {
-animation: palm-slide2 7s ease-in-out infinite alternate; linear;
-}
-#path366 {
-animation: palm-slide2 7s ease-in-out infinite alternate; linear;
+  animation: palm-slide2 7s ease-in-out infinite alternate;
 }
 
+#path366 {
+  animation: palm-slide2 7s ease-in-out infinite alternate;
+}
 
 /* Lightbulb Animation */
 @keyframes color-change {
-  from {fill: #fcd277}
-  to {fill: #ffffff}
+  from {
+    fill: #fcd277
+  }
+
+  to {
+    fill: #ffffff
+  }
 }
 
 #path302 {
-  animation: 4s color-change infinite alternate;linear;
+  animation: 4s color-change infinite alternate;
 }
 
 /* Lightbulb Rays Animation */
 @keyframes color-change-rays {
-  from {fill: #fcd277}
-  to {fill: #ddd6ef}
+  from {
+    fill: #fcd277
+  }
+
+  to {
+    fill: #ddd6ef
+  }
 }
 
 #path332 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path330 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path328 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path326 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path324 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path322 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path320 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path304 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path306 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path308 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path310 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path312 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path314 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path316 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
+
 #path318 {
-  animation: 4s color-change-rays infinite alternate;linear;
+  animation: 4s color-change-rays infinite alternate;
 }
 
 /* Stars Animation */
 @keyframes star-move1 {
-  from {fill: #8076C2; transform: translate(0px,50px);}
-  to {fill:#ffffff; transform: translate(-150px, 100px);}
+  from {
+    fill: #8076C2;
+    transform: translate(0px, 50px);
+  }
+
+  to {
+    fill: #ffffff;
+    transform: translate(-150px, 100px);
+  }
 }
 
 #path584 {
@@ -371,8 +458,15 @@ animation: palm-slide2 7s ease-in-out infinite alternate; linear;
 }
 
 @keyframes star-move2 {
-  from {fill: #8076C2; transform: translate(0px,100px);}
-  to {fill:#ffffff; transform: translate(-50px, 50px);}
+  from {
+    fill: #8076C2;
+    transform: translate(0px, 100px);
+  }
+
+  to {
+    fill: #ffffff;
+    transform: translate(-50px, 50px);
+  }
 }
 
 #path586 {
@@ -380,8 +474,15 @@ animation: palm-slide2 7s ease-in-out infinite alternate; linear;
 }
 
 @keyframes star-move3 {
-  from {fill: #8076C2; transform: translate(0px,100px);}
-  to {fill:#DDD6EF; transform: translate(-50px, 25px);}
+  from {
+    fill: #8076C2;
+    transform: translate(0px, 100px);
+  }
+
+  to {
+    fill: #DDD6EF;
+    transform: translate(-50px, 25px);
+  }
 }
 
 #path580 {
@@ -389,15 +490,20 @@ animation: palm-slide2 7s ease-in-out infinite alternate; linear;
 }
 
 @keyframes star-move4 {
-  from {fill: #8076C2; transform: translate(0px,100px);}
-  to {fill:#ffffff; transform: translate(50px, 200px);}
+  from {
+    fill: #8076C2;
+    transform: translate(0px, 100px);
+  }
+
+  to {
+    fill: #ffffff;
+    transform: translate(50px, 200px);
+  }
 }
 
 #path582 {
   animation: 2.5s star-move4 infinite alternate ease-out;
 }
-
-
 
 /* Layout styling */
 .container {
@@ -428,21 +534,16 @@ animation: palm-slide2 7s ease-in-out infinite alternate; linear;
   padding: 15px 20px;
 }
 
-
-
 #skills {
   background-color: #f5f1ed;
   display: inline-block;
   width: 100%;
 }
 
-
-
 /* Header & Navigation Styling */
 .logo {
   max-width: 36px;
 }
-
 
 nav>ul {
   list-style-type: none;
@@ -450,14 +551,13 @@ nav>ul {
   margin: 0;
 }
 
-
 nav>ul>li>a {
   padding: 0 15px;
   font-family: 'Tenor Sans', sans-serif;
   text-transform: none;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px
+  font-size: 16px;
   color: #333333;
 }
 
@@ -497,7 +597,7 @@ nav>ul>li>a:focus {
   border-top: 1px solid #f5f1ed;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
 }
@@ -506,27 +606,27 @@ nav>ul>li>a:focus {
   padding: 0 0 10px;
 }
 
-  .work-link-wrapper img{
-    border: 5px;
-    border-style: solid;
-    border-color: #E3D7CC;
-  }
+.work-link-wrapper img {
+  border: 5px;
+  border-style: solid;
+  border-color: #E3D7CC;
+}
 
-  .work-link-wrapper:hover img{
-    transition: all 800ms;
-    transform: scale(1.05);
-    padding:6px;
-    z-index: -1;
-  }
+.work-link-wrapper:hover img {
+  transition: all 800ms;
+  transform: scale(1.05);
+  padding: 6px;
+  z-index: -1;
+}
 
 [class*="col-"] {
   float: left;
   padding: 10px;
 }
 
-.pro-pic img{
+.pro-pic img {
   display: inline-block;
-  padding: none;
+  padding: 0;
 }
 
 /* Footer Styling */
@@ -554,17 +654,18 @@ Medium devices (640px and larger)
     margin-top: 2px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
@@ -581,7 +682,7 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  .pro-pic img{
+  .pro-pic img {
     display: inline-block;
     border-radius: 10px;
     padding-top: 110px;
@@ -596,7 +697,6 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-
 
   #about-page h3 {
     margin-top: 0;
@@ -638,7 +738,7 @@ Large devices (1024px or larger)
   }
 }
 
-.logo-link-wrapper img{
+.logo-link-wrapper img {
   transition: all 500ms;
   border: none;
 }
