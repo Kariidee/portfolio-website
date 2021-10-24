@@ -28,8 +28,8 @@ header {
 	z-index: 1;
 }
 
-  font-family: 'Open Sans', sans-serif;
 .navtoggle,
+.navtoggle.responsive {
 	position: relative;
 }
 
@@ -39,6 +39,8 @@ body {
 	font-size: 16px;
 	/* Sets the font size to 16px */
 	font-weight: 300;
+	/* Sets the font weight to 300 */
+	line-height: 1.6;
 	/* Sets the line-height to 1.6 * the font-size */
 	color: #0c0f0f;
 }
